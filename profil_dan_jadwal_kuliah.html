@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Diri, Jadwal Kuliah, dan Formulir Pendaftaran Mahasiswa Baru">
+    <title>Portal Akademik & Profil Mahasiswa</title>
+    <!-- Tailwind CSS CDN for modern and responsive styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <header class="bg-indigo-700 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <h1 class="text-2xl font-bold tracking-tight">Portal Akademik stimik el rahma</h1>
+            <nav>
+                <ul class="flex flex-wrap gap-6 font-medium text-sm sm:text-base">
+                    <li><a href="#profil" class="hover:text-indigo-200 transition-colors">Profil Diri</a></li>
+                    <li><a href="#jadwal" class="hover:text-indigo-200 transition-colors">Jadwal Kuliah</a></li>
+                    <li><a href="#pendaftaran" class="hover:text-indigo-200 transition-colors">Formulir Pendaftaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-10 flex-grow w-full space-y-16">
+
+        <!-- a. PROFIL DIRI SECTION -->
+        <section id="profil" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-6 border-b pb-3">a. Profil Diri</h2>
+            <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                <div class="shrink-0">
+                    <img src="https://scontent.cdninstagram.com/v/t51.2885-19/59773262_368380593781027_8968893283241558016_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=108&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45NTguQzMifQ%3D%3D&_nc_ohc=ZQC9HpUVO6kQ7kNvwFAdkvo&_nc_oc=Adr07IlBZTxme_c_O9RzXNBrjQvIrX69mOV-sJnrsgEtZRdYGWySXhtlhrMqalJuJCk&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7b689&oh=00_AQOEeEx58VBYhDXJu50Z14Qz5cqU930pGHo81DJ_EdSY4w&oe=6AD55F14" 
+                         alt="Foto Profil Mahasiswa" 
+                         class="w-48 h-48 object-cover rounded-2xl shadow-md border-4 border-indigo-50">
+                </div>
+                <div class="space-y-4 text-slate-600 leading-relaxed">
+                    <p class="text-lg font-medium text-slate-900">Halo! Nama saya <strong>muhamad sofa</strong>.</p>
+                    <p>
+                        Saya adalah seorang mahasiswa tingkat akhir yang sangat <em>antusias</em> dalam bidang pengembangan perangkat lunak 
+                        dan teknologi web modern. Saya memiliki motivasi tinggi untuk terus belajar dan mengeksplorasi hal-hal baru.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                        <div>
+                            <h3 class="font-semibold text-slate-800 mb-2">Daftar Hobi:</h3>
+                            <ul class="list-disc list-inside space-y-1 text-sm">
+                                <li>Pemrograman Web & Mobile</li>
+                                <li>Membaca Buku Teknologi</li>
+                                <li>Fotografi Lanskap</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-800 mb-2">Langkah Belajar:</h3>
+                            <ol class="list-decimal list-inside space-y-1 text-sm">
+                                <li>Memahami dasar HTML, CSS, dan JavaScript.</li>
+                                <li>Mempelajari framework modern (React & Tailwind).</li>
+                                <li>Membangun portofolio proyek nyata.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- b. JADWAL KULIAH SECTION -->
+        <section id="jadwal" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 overflow-hidden">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-6 border-b pb-3">b. Jadwal Kuliah Satu Minggu</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <caption class="text-sm text-slate-500 mb-4 italic text-left">Tabel 1.0 - Jadwal Perkuliahan Semester Genap Tahun Akademik 2025/2026</caption>
+                    <thead>
+                        <tr class="bg-indigo-50 text-indigo-900 text-sm font-semibold">
+                            <th class="p-3 border border-slate-200">Hari</th>
+                            <th class="p-3 border border-slate-200">Waktu</th>
+                            <th class="p-3 border border-slate-200">Mata Kuliah</th>
+                            <th class="p-3 border border-slate-200">Ruangan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-slate-700">
+                        <tr>
+                            <td class="p-3 border border-slate-200 font-medium" rowspan="2">Senin</td>
+                            <td class="p-3 border border-slate-200">08:00 - 10:30</td>
+                            <td class="p-3 border border-slate-200">Pemrograman Web Lanjut</td>
+                            <td class="p-3 border border-slate-200">Lab Komputer 3</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 border border-slate-200">10:45 - 12:30</td>
+                            <td class="p-3 border border-slate-200">Kecerdasan Buatan</td>
+                            <td class="p-3 border border-slate-200">Ruang 402</td>
+                        </tr>
+                        <tr class="bg-slate-50">
+                            <td class="p-3 border border-slate-200 font-medium">Selasa</td>
+                            <td class="p-3 border border-slate-200">13:00 - 15:30</td>
+                            <td class="p-3 border border-slate-200">Sistem Basis Data</td>
+                            <td class="p-3 border border-slate-200">Lab Basis Data</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 border border-slate-200 font-medium">Rabu</td>
+                            <td class="p-3 border border-slate-200">09:00 - 11:30</td>
+                            <td class="p-3 border border-slate-200">Interaksi Manusia dan Komputer</td>
+                            <td class="p-3 border border-slate-200">Ruang 201</td>
+                        </tr>
+                        <tr class="bg-slate-50">
+                            <td class="p-3 border border-slate-200 font-medium" colspan="4" class="text-center italic font-semibold text-slate-500">
+                                Kamis: Kegiatan Mandiri / Belajar Kelompok (Tanpa Jadwal Kelas)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 border border-slate-200 font-medium">Jumat</td>
+                            <td class="p-3 border border-slate-200">08:00 - 10:30</td>
+                            <td class="p-3 border border-slate-200">Pengembangan Aplikasi Bergerak</td>
+                            <td class="p-3 border border-slate-200">Lab Mobile</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- c. FORMULIR PENDAFTARAN SECTION -->
+        <section id="pendaftaran" class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-6 border-b pb-3">c. Formulir Pendaftaran Mahasiswa Baru</h2>
+            <form action="#" method="POST" class="space-y-6">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Nama -->
+                    <div class="space-y-2">
+                        <label for="nama" class="block font-medium text-sm text-slate-700">Nama Lengkap <span class="text-red-500">*</span></label>
+                        <input type="text" id="nama" name="nama" required 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+                               placeholder="Masukkan nama lengkap">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="space-y-2">
+                        <label for="email" class="block font-medium text-sm text-slate-700">Email Aktif <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+                               placeholder="contoh@domain.com">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Kata Sandi -->
+                    <div class="space-y-2">
+                        <label for="sandi" class="block font-medium text-sm text-slate-700">Kata Sandi <span class="text-red-500">*</span></label>
+                        <input type="password" id="sandi" name="sandi" required minlength="8" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+                               placeholder="Minimal 8 karakter">
+                        <p class="text-xs text-slate-500">Kata sandi harus terdiri dari minimal 8 karakter.</p>
+                    </div>
+
+                    <!-- Tanggal Lahir -->
+                    <div class="space-y-2">
+                        <label for="tgl_lahir" class="block font-medium text-sm text-slate-700">Tanggal Lahir <span class="text-red-500">*</span></label>
+                        <input type="date" id="tgl_lahir" name="tgl_lahir" required 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Jenis Kelamin (Radio) -->
+                    <div class="space-y-2">
+                        <span class="block font-medium text-sm text-slate-700">Jenis Kelamin <span class="text-red-500">*</span></span>
+                        <div class="flex items-center gap-6 pt-1">
+                            <label class="flex items-center gap-2 text-sm cursor-pointer">
+                                <input type="radio" name="jenis_kelamin" value="Laki-laki" required class="text-indigo-600 focus:ring-indigo-500"> Laki-laki
+                            </label>
+                            <label class="flex items-center gap-2 text-sm cursor-pointer">
+                                <input type="radio" name="jenis_kelamin" value="Perempuan" required class="text-indigo-600 focus:ring-indigo-500"> Perempuan
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Program Studi (Select) -->
+                    <div class="space-y-2">
+                        <label for="prodi" class="block font-medium text-sm text-slate-700">Program Studi <span class="text-red-500">*</span></label>
+                        <select id="prodi" name="prodi" required 
+                                class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm bg-white">
+                            <option value="">-- Pilih Program Studi --</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Teknologi Informasi">Teknologi Informasi</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Minat (Checkbox) -->
+                <div class="space-y-2">
+                    <span class="block font-medium text-sm text-slate-700">Minat Bidang Studi</span>
+                    <div class="flex flex-wrap gap-6 pt-1">
+                        <label class="flex items-center gap-2 text-sm cursor-pointer">
+                            <input type="checkbox" name="minat[]" value="Web Development" class="rounded text-indigo-600 focus:ring-indigo-500"> Web Development
+                        </label>
+                        <label class="flex items-center gap-2 text-sm cursor-pointer">
+                            <input type="checkbox" name="minat[]" value="Data Science" class="rounded text-indigo-600 focus:ring-indigo-500"> Data Science
+                        </label>
+                        <label class="flex items-center gap-2 text-sm cursor-pointer">
+                            <input type="checkbox" name="minat[]" value="Artificial Intelligence" class="rounded text-indigo-600 focus:ring-indigo-500"> Artificial Intelligence
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Alamat (Textarea) -->
+                <div class="space-y-2">
+                    <label for="alamat" class="block font-medium text-sm text-slate-700">Alamat Lengkap <span class="text-red-500">*</span></label>
+                    <textarea id="alamat" name="alamat" rows="3" required 
+                              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm"
+                              placeholder="Masukkan alamat domisili saat ini"></textarea>
+                </div>
+
+                <!-- Tombol Submit & Reset -->
+                <div class="flex items-center gap-4 pt-4">
+                    <button type="submit" 
+                            class="px-6 py-2.5 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors shadow-sm text-sm">
+                        Kirim Pendaftaran
+                    </button>
+                    <button type="reset" 
+                            class="px-6 py-2.5 bg-slate-200 text-slate-700 font-medium rounded-lg hover:bg-slate-300 transition-colors text-sm">
+                        Reset Formulir
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-white text-center py-6 mt-16 text-sm">
+        <p>&copy; 2026 Andi Pratama. Hak Cipta Dilindungi Undang-Undang.</p>
+    </footer>
+
+</body>
+</html>
